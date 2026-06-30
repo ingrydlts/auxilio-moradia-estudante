@@ -145,6 +145,14 @@
   .sib-form{ border-radius: var(--radius) !important; overflow: hidden; }
   #sib-container{ box-shadow: 0 6px 24px rgba(43,36,32,0.08); }
 
+  /* ---------- Checklist embutido na tela de sucesso ---------- */
+  .checklist-embed{ margin-top: 1rem; text-align: center; }
+  .checklist-embed iframe{
+    width: 100%; height: 65vh; min-height: 420px; max-height: 640px;
+    border: 1px solid var(--cor-borda); border-radius: 10px; background: #fff;
+  }
+  .checklist-embed .btn-outline{ margin-top: 0.85rem; font-size: 0.88rem; padding: 0.7rem 1.3rem; min-height: 40px; }
+
   /* ---------- Bônus: template francês (Gumroad) ---------- */
   .bonus{ text-align: center; }
   .bonus-card{
@@ -320,7 +328,12 @@
         <div id="success-message" class="sib-form-message-panel" style="font-family:Inter, sans-serif; font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-color:#13ce66; border-radius:3px; max-width:540px;">
           <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
             <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/></svg>
-            <span class="sib-form-message-panel__inner-text">Prontinho! Confira sua caixa de entrada — o guia está a caminho.</span>
+            <span class="sib-form-message-panel__inner-text">Prontinho! Seu checklist está logo abaixo — e também a caminho do seu e-mail.</span>
+          </div>
+          <div class="checklist-embed">
+            <iframe src="https://topordentroviagens.notion.site/ebd/38fd602254ce800bbf8ec12ff7fa43ad" title="Checklist — as 4 alternativas à APL para estudantes" loading="lazy"></iframe>
+            <br>
+            <a href="https://topordentroviagens.notion.site/ebd/38fd602254ce800bbf8ec12ff7fa43ad" target="_blank" rel="noopener" class="btn-outline">Abrir checklist em tela cheia →</a>
           </div>
         </div>
         <div></div>
